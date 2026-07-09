@@ -1,1 +1,63 @@
+/* ===== RESET & BASE ===== */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
 
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f5f7fa;
+    color: #333;
+    line-height: 1.6;
+    overflow-x: hidden;
+}
+
+/* ===== COULEURS ===== */
+:root {
+    /* Couleurs FIS */
+    --fis-dark-blue: #0a244d;
+    --fis-light-blue: #1e3a8a;
+    --fis-green: #22c55e;
+    --fis-text: #ffffff;
+
+    /* Couleurs NEOMA */
+    --neoma-blue: #0077b6;
+    --neoma-light-blue: #6ba3c8;
+    --neoma-white: #ffffff;
+    --neoma-gray: #f0f4f8;
+}
+
+/* ===== LAYOUT ===== */
+.container {
+    display: flex;
+    min-height: 100vh;
+}
+
+/* ===== MENU LATÉRAL ===== */
+.sidebar {
+    width: 280px;
+    background: linear-gradient(180deg, var(--fis-dark-blue) 0%, var(--fis-light-blue) 100%);
+    color: var(--fis-text);
+    position: fixed;
+    height: 100vh;
+    padding: 2rem 1.5rem;
+    overflow-y: auto;
+    z-index: 1000;
+    box-shadow: 2px 0 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Style du contenu principal */
+.main-content {
+    flex: 1;
+    margin-left: 280px;
+    padding: 2rem;
+}
+
+/* ===== STYLES DES SECTIONS ===== */
+/* (Copie ici tous les styles du canvas précédent) */
+.hero { ... }
+.section { ... }
+.about-section { ... }
+.missions-section { ... }
+/* etc. */
