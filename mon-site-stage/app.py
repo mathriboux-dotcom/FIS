@@ -24,7 +24,7 @@ if not st.session_state.connected:
     Pour accéder au contenu, veuillez saisir le mot de passe.
     """)
     pwd = st.text_input("Mot de passe", type="password")
-    if st.button("Entrer"):
+    if st.button("Entrer", key="login_button"):
         if pwd == PASSWORD:
             st.session_state.connected = True
             st.rerun()
@@ -35,18 +35,18 @@ if not st.session_state.connected:
 # --- ACCUEIL ---
 st.title("💻 Mon Stage chez FIS Financial Systems France")
 st.markdown(f"""
-## {STAGE_INFO['duree']} | Tuteur : {STAGE_INFO['tuteur']} | {STAGE_INFO['dates']}
+## 📅 {STAGE_INFO['duree']} | 👤 Tuteur : {STAGE_INFO['tuteur']} | 🗓️ {STAGE_INFO['dates']}
 ---
 **Découvrez mon parcours, mes missions et ce que j’ai appris pendant ce stage.**
 """)
 
 st.markdown("""
-### 📌 Navigation
-- [Qui suis-je ?](/02_Qui_suis_je)
-- [Mon stage chez FIS](/03_Mon_stage)
-- [🚀 Mes missions (Arborescence interactive)](/04_Missions)
-- [Projet personnel (Anglais)](/05_Projet_personnel)
-- [Ce que j’ai appris](/06_Ce_que_jai_appris)
-- [Mon bilan](/07_Mon_bilan)
-- [Annexes (PDFs)](/08_Annexes)
+### 📌 **Navigation**
+- **[Qui suis-je ?](02_Qui_suis_je)** : Mon parcours et mes motivations.
+- **[Mon stage chez FIS](03_Mon_stage)** : L’entreprise, mon arrivée, mon équipe.
+- **[🚀 Mes missions](04_Missions)** : Arborescence interactive de mon travail.
+- **[Projet personnel (Anglais)](05_Projet_personnel)** : Stage intensif d’anglais.
+- **[Ce que j’ai appris](06_Ce_que_jai_appris)** : Compétences et transformation digitale.
+- **[Mon bilan](07_Mon_bilan)** : Difficultés, évolution, et projet professionnel.
+- **[Annexes](08_Annexes)** : Justificatifs et documents.
 """)
