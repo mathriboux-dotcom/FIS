@@ -3,395 +3,44 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Stage FIS - Mathilde Riboux | TEMA NEOMA</title>
-
-    <!-- Polices Google -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
-
-    <!-- Font Awesome (icônes) -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-
-    <!-- Highlight.js (pour la coloration du code) -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.7.0/styles/github-dark.min.css">
-
-    <!-- Mon CSS -->
-    <link rel="stylesheet" href="css/style.css">
+    <title>Accueil - Mon Stage chez FIS</title>
+    <!-- Lien vers le CSS commun -->
+    <link rel="stylesheet" href="styles/main.css">
+    <!-- Lien vers le JS commun -->
+    <script src="scripts/main.js" defer></script>
 </head>
 <body>
-    <!-- Barre de navigation -->
-    <nav class="navbar">
-        <div class="navbar-container">
-            <a href="#accueil" class="navbar-logo">
-                <i class="fas fa-laptop-code"></i> <span>Stage FIS</span>
-            </a>
-            <ul class="navbar-menu">
-                <li><a href="#accueil" class="nav-link">Accueil</a></li>
-                <li><a href="#qui-suis-je" class="nav-link">Qui suis-je ?</a></li>
-                <li><a href="#mon-stage" class="nav-link">Mon stage</a></li>
-                <li><a href="#missions" class="nav-link">Mes missions</a></li>
-                <li><a href="#appris" class="nav-link">Ce que j'ai appris</a></li>
-                <li><a href="#bilan" class="nav-link">Mon bilan</a></li>
-                <li><a href="#annexes" class="nav-link">Annexes</a></li>
+    <!-- Menu latéral (identique sur toutes les pages) -->
+    <aside class="sidebar">
+        <div class="sidebar-header">
+            <h1>Stage FIS</h1>
+            <p>Mathilde Riboux - TEMA NEOMA</p>
+        </div>
+        <nav>
+            <ul class="sidebar-nav">
+                <li><a href="index.html" class="active"><i class="fas fa-home"></i> Accueil</a></li>
+                <li><a href="qui-suis-je.html"><i class="fas fa-user"></i> Qui suis-je ?</a></li>
+                <li><a href="mon-stage.html"><i class="fas fa-building"></i> Mon stage chez FIS</a></li>
+                <li><a href="mes-missions.html"><i class="fas fa-tasks"></i> Mes missions</a></li>
+                <li><a href="apprentissages.html"><i class="fas fa-brain"></i> Ce que j'ai appris</a></li>
+                <li><a href="outils.html"><i class="fas fa-tools"></i> Les outils</a></li>
+                <li><a href="bilan.html"><i class="fas fa-chart-line"></i> Mon bilan</a></li>
             </ul>
-            <button class="navbar-toggle" aria-label="Toggle navigation">
-                <i class="fas fa-bars"></i>
-            </button>
-        </div>
-    </nav>
+        </nav>
+    </aside>
 
-    <!-- Page d'accueil -->
-    <section id="accueil" class="section hero">
-        <div class="hero-content">
-            <h1 class="hero-title">Mon Stage chez <span class="highlight">FIS Financial Systems France</span></h1>
-            <p class="hero-subtitle">
-                Bienvenue sur mon site de retour d'expérience de stage.
-                <br><br>
-                Au cours de ma première année à <strong>TEMA (NEOMA Business School)</strong>, j'ai effectué un stage chez <strong>FIS Financial Systems France</strong>.
-                Cette expérience m'a permis de découvrir le fonctionnement d'une entreprise spécialisée dans les <strong>technologies financières</strong>.
-                <br><br>
-                J'ai intégré une équipe travaillant sur l'<strong>automatisation des déploiements</strong> et l'organisation des configurations utilisées par les applications.
-                Tout au long de ce stage, j'ai découvert de nouveaux outils, participé à plusieurs projets et développé de nouvelles compétences.
-            </p>
-            <div class="hero-features">
-                <div class="feature-item">
-                    <i class="fas fa-building"></i>
-                    <span>L'entreprise <strong>FIS</strong></span>
-                </div>
-                <div class="feature-item">
-                    <i class="fas fa-tasks"></i>
-                    <span>Les <strong>missions</strong> réalisées</span>
-                </div>
-                <div class="feature-item">
-                    <i class="fas fa-tools"></i>
-                    <span>Les <strong>outils</strong> découverts</span>
-                </div>
-                <div class="feature-item">
-                    <i class="fas fa-brain"></i>
-                    <span>Les <strong>compétences</strong> développées</span>
-                </div>
-                <div class="feature-item">
-                    <i class="fas fa-chart-line"></i>
-                    <span>Le <strong>bilan</strong> de l'expérience</span>
+    <!-- Contenu spécifique à la page d'accueil -->
+    <main class="main-content">
+        <section class="hero">
+            <div class="hero-content">
+                <h1>Comprendre mon stage, de l'idée au déploiement</h1>
+                <p>J'ai travaillé sur l'automatisation des configurations et des déploiements. Ce site explique les outils, les missions et le chemin complet d'une configuration jusqu'à son installation sur les serveurs.</p>
+                <div class="hero-buttons">
+                    <a href="mes-missions.html" class="btn btn-primary">Explorer les missions</a>
+                    <a href="mon-stage.html" class="btn btn-secondary">Voir le processus global</a>
                 </div>
             </div>
-            <a href="#missions" class="btn btn-primary">
-                Explorer mes missions <i class="fas fa-arrow-down"></i>
-            </a>
-        </div>
-    </section>
-
-    <!-- Section "Qui suis-je ?" -->
-    <section id="qui-suis-je" class="section">
-        <div class="container">
-            <h2 class="section-title"><i class="fas fa-user-graduate"></i> Qui suis-je ?</h2>
-            <div class="section-content">
-                <div class="content-text">
-                    <div class="content-card">
-                        <h3>📸 À propos de moi</h3>
-                        <p>
-                            Je m’appelle <strong>Mathilde Riboux</strong> et je suis étudiante en première année du programme <strong>TEMA</strong> à <strong>NEOMA Business School</strong>.
-                            TEMA est une formation qui associe le <strong>management</strong>, le <strong>commerce</strong> et le <strong>numérique</strong>.
-                        </p>
-                        <p>
-                            Depuis le début de l’année, j’ai découvert des domaines très variés, allant de l’étude des entreprises aux technologies numériques.
-                            Cette diversité m’a permis d’acquérir une première vision du monde professionnel.
-                        </p>
-                        <p>
-                            Cependant, une question revenait souvent : <em>« Je comprenais les notions vues en cours, mais je voyais difficilement comment elles étaient appliquées en entreprise. »</em>
-                        </p>
-                    </div>
-                    <div class="content-card">
-                        <h3>🎯 Pourquoi ce stage ?</h3>
-                        <p>
-                            C’est cette curiosité qui m’a poussée à postuler chez <strong>FIS Financial Systems France</strong>.
-                            Je souhaitais découvrir un <strong>environnement professionnel concret</strong> et comprendre ce qui se cache derrière les outils numériques utilisés chaque jour par les entreprises.
-                        </p>
-                        <p>
-                            Ce stage était aussi une opportunité d’explorer un secteur que je ne connaissais pas : celui des <strong>technologies financières</strong>.
-                        </p>
-                    </div>
-                </div>
-                <div class="content-image">
-                    <!-- Remplace par ton image -->
-                    <img src="assets/images/neoma-campus.jpg" alt="Campus NEOMA" onerror="this.style.display='none'">
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Section "Mon stage chez FIS" -->
-    <section id="mon-stage" class="section">
-        <div class="container">
-            <h2 class="section-title"><i class="fas fa-building"></i> Mon stage chez FIS</h2>
-            <div class="section-content">
-                <div class="content-text">
-                    <div class="content-card">
-                        <h3>🚪 Mon arrivée chez FIS</h3>
-                        <p>
-                            Mon premier jour chez FIS a marqué le début de cette expérience enrichissante.
-                            Dès mon arrivée, j’ai reçu tout le matériel nécessaire : un ordinateur professionnel, un casque, un badge d’accès, et les accès aux outils internes.
-                        </p>
-                        <p>
-                            J’ai été agréablement surprise par l’<strong>ambiance de travail</strong> : les échanges entre collègues étaient nombreux, et chacun prenait le temps de répondre à mes questions.
-                            Cette atmosphère m’a permis de trouver rapidement mes repères.
-                        </p>
-                    </div>
-                    <div class="content-card">
-                        <h3>🏢 Découverte de l'entreprise</h3>
-                        <p>
-                            Avant ce stage, je connaissais peu le secteur des <strong>technologies financières</strong>.
-                            J’ai découvert une entreprise spécialisée dans le développement de solutions pour les acteurs du monde bancaire et financier.
-                        </p>
-                        <p>
-                            J’ai compris que la <strong>fiabilité</strong> et la <strong>sécurité</strong> étaient au cœur des préoccupations de FIS.
-                            Une erreur de configuration ou une interruption de service peut en effet avoir des conséquences majeures pour les clients.
-                        </p>
-                        <p>
-                            C’est dans ce contexte que j’ai découvert l’importance de <strong>l’automatisation</strong> :
-                            les infrastructures deviennent de plus en plus complexes, et les équipes doivent gérer un grand nombre de serveurs et de configurations.
-                            L’automatisation permet de réduire les erreurs humaines, de gagner du temps, et de garantir une cohérence parfaite entre les environnements.
-                        </p>
-                    </div>
-                </div>
-                <div class="content-image">
-                    <!-- Remplace par le logo de FIS -->
-                    <img src="assets/images/fis-logo.png" alt="Logo FIS" onerror="this.style.display='none'">
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Section "Mes missions" -->
-    <section id="missions" class="section">
-        <div class="container">
-            <h2 class="section-title"><i class="fas fa-folder-open"></i> Mes missions</h2>
-            <p class="section-intro">
-                Découvrez l’environnement technique sur lequel j’ai travaillé.
-                <br>
-                Cliquez sur un élément de l’arborescence pour en savoir plus.
-            </p>
-            <div class="missions-container">
-                <!-- Arborescence -->
-                <div class="missions-tree">
-                    <div class="tree-item" data-target="deployment">
-                        <i class="fas fa-folder"></i> 📦 deployment
-                    </div>
-                    <div class="tree-item" data-target="ansible">
-                        <i class="fas fa-folder"></i> 📁 ansible
-                    </div>
-                    <div class="tree-subitems" id="ansible-subitems">
-                        <div class="tree-item" data-target="playbooks">
-                            <i class="fas fa-file-code"></i> 📁 Playbooks
-                        </div>
-                        <div class="tree-item" data-target="inventories">
-                            <i class="fas fa-file-alt"></i> 📁 Inventories
-                        </div>
-                        <div class="tree-item" data-target="roles">
-                            <i class="fas fa-folder"></i> 📁 roles
-                        </div>
-                        <div class="tree-subitems" id="roles-subitems">
-                            <div class="tree-item" data-target="fisrelay">
-                                <i class="fas fa-folder"></i> 📁 FIS Relay
-                            </div>
-                        </div>
-                        <div class="tree-item" data-target="scripts">
-                            <i class="fas fa-folder"></i> 📁 scripts
-                        </div>
-                    </div>
-                    <div class="tree-item" data-target="jenkins">
-                        <i class="fas fa-rocket"></i> 🚀 Jenkins
-                    </div>
-                </div>
-                <!-- Contenu des missions -->
-                <div class="missions-content">
-                    <!-- Contenu par défaut -->
-                    <div id="deployment" class="mission-content active">
-                        <h3>📦 deployment</h3>
-                        <p>Ce dossier représente l’environnement utilisé durant mon stage. Il regroupe les configurations, les scripts et les outils nécessaires au bon fonctionnement du projet.</p>
-                    </div>
-                    <!-- Playbooks -->
-                    <div id="playbooks" class="mission-content">
-                        <h3>📁 Playbooks</h3>
-                        <p>Les playbooks sont des fichiers YAML qui définissent les étapes de déploiement pour Ansible. Ils permettent d’automatiser des tâches répétitives comme l’installation de logiciels, la configuration de serveurs, ou le déploiement d’applications.</p>
-                        <h4>Exemple de playbook :</h4>
-                        <pre><code class="language-yaml">---
-- name: Déployer FIS Relay
-  hosts: all
-  become: yes
-  tasks:
-    - name: Vérifier que le répertoire existe
-      file:
-        path: /opt/fisrelay
-        state: directory
-        mode: '0755'
-
-    - name: Copier les fichiers de configuration
-      copy:
-        src: files/fisrelay.ini
-        dest: /opt/fisrelay/conf/fisrelay.ini</code></pre>
-                    </div>
-                    <!-- FIS Relay -->
-                    <div id="fisrelay" class="mission-content">
-                        <h3>📁 FIS Relay</h3>
-                        <p>Le rôle FIS Relay est l’un des principaux projets sur lesquels j’ai travaillé. Il permet de gérer les configurations de l’application FIS Relay, utilisée pour le routage des transactions financières.</p>
-                        <h4>Les commons</h4>
-                        <p>Les <strong>commons</strong> sont des fichiers qui regroupent les paramètres partagés par plusieurs serveurs. Cela évite la duplication et simplifie la maintenance.</p>
-                        <div class="before-after">
-                            <div class="before">
-                                <h5>❌ Avant (duplication)</h5>
-                                <pre><code># Serveur A
-ServerID = A01
-Path = /relay
-Port = 8000
-
-# Serveur B
-ServerID = B01
-Path = /relay  # Duplication !
-Port = 8000     # Duplication !</code></pre>
-                            </div>
-                            <div class="after">
-                                <h5>✅ Après (centralisé)</h5>
-                                <pre><code># COMMON
-Path = /relay
-Port = 8000
-
-# Serveur A
-ServerID = A01
-
-# Serveur B
-ServerID = B01</code></pre>
-                            </div>
-                        </div>
-                    </div>
-                    <!-- Jenkins -->
-                    <div id="jenkins" class="mission-content">
-                        <h3>🚀 Jenkins</h3>
-                        <p>Jenkins est un outil d’automatisation qui permet de lancer, suivre et contrôler les déploiements. Il orchestrait l’exécution des playbooks Ansible et garantissait que les configurations étaient correctement appliquées sur les serveurs.</p>
-                        <h4>Pipeline de déploiement</h4>
-                        <p>Un <strong>Jenkinsfile</strong> définissait les étapes du déploiement :</p>
-                        <ol>
-                            <li>Récupération du code source ;</li>
-                            <li>Préparation de l’environnement ;</li>
-                            <li>Exécution des playbooks Ansible ;</li>
-                            <li>Vérification du déploiement.</li>
-                        </ol>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Section "Ce que j'ai appris" -->
-    <section id="appris" class="section">
-        <div class="container">
-            <h2 class="section-title"><i class="fas fa-graduation-cap"></i> Ce que j'ai appris</h2>
-            <div class="section-content">
-                <div class="content-text">
-                    <div class="content-card">
-                        <h3>🌍 Une expérience enrichissante</h3>
-                        <p>Ce stage m’a permis de découvrir un environnement professionnel bien différent de ce que je connaissais. J’ai compris que derrière chaque application se cachent des serveurs, des configurations, des outils de déploiement, et des équipes qui collaborent.</p>
-                    </div>
-                    <div class="content-card">
-                        <h3>🔄 La transformation digitale</h3>
-                        <p>Chez FIS, j’ai pu observer concrètement comment la transformation digitale impacte le secteur financier. Les applications doivent être déployées plus rapidement, tout en garantissant un haut niveau de fiabilité et de sécurité.</p>
-                    </div>
-                    <div class="content-card">
-                        <h3>💻 Découverte du DevOps</h3>
-                        <p>J’ai découvert comment des outils comme <strong>Ansible</strong> et <strong>Jenkins</strong> permettent d’automatiser des tâches complexes. Un déploiement ne consiste pas seulement à installer une application : il faut préparer les configurations, vérifier leur cohérence, et s’assurer que tout fonctionne correctement.</p>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Section "Mon bilan" -->
-    <section id="bilan" class="section">
-        <div class="container">
-            <h2 class="section-title"><i class="fas fa-chart-line"></i> Mon bilan</h2>
-            <div class="section-content">
-                <div class="content-text">
-                    <div class="content-card">
-                        <h3>📉 Les difficultés rencontrées</h3>
-                        <p>Au début, comprendre l’environnement technique (Ansible, Jenkins, Linux) a été un défi. Les configurations étaient réparties sur des dizaines de fichiers, et il m’a fallu du temps pour comprendre comment tout s’articulait.</p>
-                    </div>
-                    <div class="content-card">
-                        <h3>🌱 Une expérience formatrice</h3>
-                        <p>Ce stage m’a permis de gagner en autonomie, en rigueur, et en confiance. J’ai appris à analyser des problèmes, à chercher des solutions, et à travailler en équipe.</p>
-                    </div>
-                    <div class="content-card">
-                        <h3>🎯 Ce que je retiens</h3>
-                        <p>Si je devais résumer cette expérience, je dirais qu’elle m’a permis de découvrir l’envers du décor. J’ai compris comment une application est préparée, configurée, déployée et maintenue dans une grande entreprise.</p>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Section "Annexes" -->
-    <section id="annexes" class="section">
-        <div class="container">
-            <h2 class="section-title"><i class="fas fa-paperclip"></i> Annexes</h2>
-            <div class="section-content">
-                <div class="content-text">
-                    <p>Retrouvez ici les documents officiels liés à mon stage.</p>
-                    <div class="download-list">
-                        <a href="assets/docs/justification_stage.pdf" class="btn btn-secondary" download>
-                            <i class="fas fa-file-pdf"></i> Convention de stage
-                        </a>
-                        <a href="assets/docs/recu_paiement.pdf" class="btn btn-secondary" download>
-                            <i class="fas fa-file-pdf"></i> Reçu de paiement
-                        </a>
-                        <a href="assets/docs/justificatif_projet_personnel.pdf" class="btn btn-secondary" download>
-                            <i class="fas fa-file-pdf"></i> Projet personnel (Anglais)
-                        </a>
-                    </div>
-                </div>
-            </div>
-            <div class="section-subcontent">
-                <div class="content-card">
-                    <h3><i class="fas fa-tools"></i> Les outils que j'ai découverts</h3>
-                    <div class="tools-list">
-                        <div class="tool-item">
-                            <div class="tool-header" style="border-color: #3867D6;">
-                                <i class="fas fa-cog" style="color: #3867D6;"></i>
-                                <h4>Ansible</h4>
-                            </div>
-                            <div class="tool-content">
-                                <p><strong>Qu'est-ce que c'est ?</strong></p>
-                                <p>Un outil d'automatisation pour gérer des serveurs et déployer des applications.</p>
-                                <p><strong>À quoi ça sert ?</strong></p>
-                                <p>Automatiser des tâches répétitives sur plusieurs serveurs.</p>
-                            </div>
-                        </div>
-                        <div class="tool-item">
-                            <div class="tool-header" style="border-color: #D24939;">
-                                <i class="fas fa-rocket" style="color: #D24939;"></i>
-                                <h4>Jenkins</h4>
-                            </div>
-                            <div class="tool-content">
-                                <p><strong>Qu'est-ce que c'est ?</strong></p>
-                                <p>Un outil d'automatisation pour lancer et superviser des déploiements.</p>
-                                <p><strong>À quoi ça sert ?</strong></p>
-                                <p>Orchestrer des pipelines de déploiement.</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Pied de page -->
-    <footer class="footer">
-        <div class="container">
-            <p>© 2026 Mathilde Riboux – Stage FIS Financial Systems France | TEMA NEOMA Business School</p>
-        </div>
-    </footer>
-
-    <!-- JavaScript -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.7.0/highlight.min.js"></script>
-    <script src="js/script.js"></script>
+        </section>
+    </main>
 </body>
 </html>
